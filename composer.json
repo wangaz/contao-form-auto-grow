@@ -34,8 +34,8 @@
 				"src/system/modules/form-auto-grow":"system/modules/form-auto-grow"
 			},
 			"runonce": [
-                "system/modules/form-auto-grow/config/runonce.php"
-            ]
+				"system/modules/form-auto-grow/config/runonce.php"
+			]
 		}
 	}
 }
