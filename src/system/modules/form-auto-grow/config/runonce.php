@@ -14,7 +14,7 @@ class FagRunonce {
 	
 		// alter name of column if it exists
 		if ($objDatabase->fieldExists('tl_form_field', 'aGTEnabled')) 
-			$objDatabase->execute("ALTER TABLE tl_form_field CHANGE fag_enabled aGTEnabled varchar(1) NOT NULL default ''");
+			$objDatabase->execute("ALTER TABLE tl_form_field CHANGE aGTEnabled fag_enabled varchar(1) NOT NULL default ''");
 	}
 }
 
