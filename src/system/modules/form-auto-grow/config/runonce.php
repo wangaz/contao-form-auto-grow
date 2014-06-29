@@ -20,4 +20,4 @@ class FagRunonce {
 
 // run 
 $objFagRunonce = new FagRunonce();
-$objB$objFagRunonceannerRunonceJob->run();
+$objB$objFagRunonce->run();
