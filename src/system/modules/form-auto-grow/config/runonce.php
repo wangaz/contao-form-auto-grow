@@ -19,5 +19,4 @@ class FagRunonce {
 }
 
 // run 
-$objFagRunonce = new FagRunonce();
-$objB$objFagRunonce->run();
+FagRunonce::run();
