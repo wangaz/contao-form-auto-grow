@@ -1,5 +1,7 @@
 <script type="text/javascript">
   /* <![CDATA[ */
-  new Form.AutoGrow('ctrl_<?php echo $this->id; ?>');
+  	new Form.AutoGrow('ctrl_<?php echo $this->id; ?>', {
+	  minHeightFactor: <?php echo $this->minHeight; ?>
+	});
   /* ]]> */
 </script>

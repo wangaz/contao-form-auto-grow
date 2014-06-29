@@ -20,6 +20,7 @@ class ParseWidgetHook extends \Backend {
 			// call constructor of JavaScript class
 			$objTemplate = new \FrontendTemplate('faq_textfield');
 			$objTemplate->id = $objWidget->id;
+			$objTemplate->minHeight = $objWidget->rows;
 			$strBuffer .= $objTemplate->parse();
 		}
 		
