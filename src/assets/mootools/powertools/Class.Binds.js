@@ -1,27 +1,2 @@
-/*
----
-
-name: Class.Binds
-
-description: A clean Class.Binds Implementation
-
-authors: Scott Kyle (@appden), Christoph Pojer (@cpojer)
-
-license: MIT-style license.
-
-requires: [Core/Class, Core/Function]
-
-provides: Class.Binds
-
-...
-*/
-
-Class.Binds = new Class({
-
-	$bound: {},
-
-	bound: function(name){
-		return this.$bound[name] ? this.$bound[name] : this.$bound[name] = this[name].bind(this);
-	}
-
-});
+/* Class.Binds, MIT-style license.*/
+Class.Binds=new Class({$bound:{},bound:function(n){return this.$bound[n]?this.$bound[n]:this.$bound[n]=this[n].bind(this)}});
