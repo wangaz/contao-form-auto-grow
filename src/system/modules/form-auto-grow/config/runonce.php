@@ -13,7 +13,7 @@ class FagRunonce {
 		$objDatabase = \Database::getInstance();
 	
 		// alter name of column if it exists
-		if ($objDatabase->fieldExists('tl_form_field', 'aGTEnabled')) 
+		if ($objDatabase->fieldExists('aGTEnabled', 'tl_form_field')) 
 			$objDatabase->execute("ALTER TABLE tl_form_field CHANGE aGTEnabled fag_enabled varchar(1) NOT NULL default ''");
 	}
 }
