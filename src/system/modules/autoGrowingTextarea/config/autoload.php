@@ -8,8 +8,16 @@
  
  
 /**
-* Register the classes
-*/
+ * Register the class
+ */
 ClassLoader::addClasses(array(
     'FormAutoGrow\ParseWidgetHook' => 'system/modules/form-auto-grow/ParseWidgetHook.php'
+));
+
+
+/**
+ * Register the template
+ */
+TemplateLoader::addFiles(array(
+	'js_fag'	=> 'system/modules/form-auto-grow/templates',
 ));
