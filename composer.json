@@ -31,6 +31,7 @@
 		"contao": {
 			"symlinks":{
 				"src/assets/mootools/autogrow":"assets/mootools/autogrow",
+				"src/assets/mootools/powertools":"assets/mootools/powertools",
 				"src/system/modules/form-auto-grow":"system/modules/form-auto-grow"
 			}
 		}

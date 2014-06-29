@@ -1,3 +1,0 @@
-<script>
-  new Form.AutoGrow('<?php echo $this->id; ?>');
-</script>

@@ -19,5 +19,5 @@ ClassLoader::addClasses(array(
  * Register the template
  */
 TemplateLoader::addFiles(array(
-	'js_fag'	=> 'system/modules/form-auto-grow/templates',
+	'faq_textfield'	=> 'system/modules/form-auto-grow/templates',
 ));

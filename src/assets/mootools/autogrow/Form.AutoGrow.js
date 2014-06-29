@@ -18,6 +18,74 @@ provides: Form.AutoGrow
 ...
 */
 
+Class.Binds = new Class({
+
+$bound: {},
+
+bound: function(name){
+return this.$bound[name] ? this.$bound[name] : this.$bound[name] = this[name].bind(this);
+}
+
+});
+
+(function(){
+
+var storage = {
+
+storage: {},
+
+store: function(key, value){
+this.storage[key] = value;
+},
+
+retrieve: function(key){
+return this.storage[key] || null;
+}
+
+};
+
+Class.Singleton = function(){
+this.$className = String.uniqueID();
+};
+
+Class.Singleton.prototype.check = function(item){
+if (!item) item = storage;
+
+var instance = item.retrieve('single:' + this.$className);
+if (!instance) item.store('single:' + this.$className, this);
+
+return instance;
+};
+
+var gIO = function(klass){
+
+var name = klass.prototype.$className;
+
+return name ? this.retrieve('single:' + name) : null;
+
+};
+
+if (('Element' in this) && Element.implement) Element.implement({getInstanceOf: gIO});
+
+Class.getInstanceOf = gIO.bind(storage);
+
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 (function(){
 
 var wrapper = new Element('div').setStyles({
@@ -44,7 +112,7 @@ var AutoGrow = this.Form.AutoGrow = new Class({
 
 	initialize: function(element, options){
 		this.setOptions(options);
-		element = this.element = document.id(element);
+		element = this.element = $(element);
 		
 		return this.check(element) || this.setup();
 	},
