@@ -8,7 +8,7 @@
  
 class FagRunonce {
 	
-	public function run() {
+	public static function run() {
 		// get database object
 		$objDatabase = \Database::getInstance();
 	
