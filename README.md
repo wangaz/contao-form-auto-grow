@@ -4,7 +4,7 @@ Automatically resizes textareas depending on their content for [Contao CMS](http
 
 ##CSS Tips
 
-Use the following CSS-Styles to get most out of Form.AutoGrow.
+Use the following CSS-Styles to get most out of Auto Grow.
 
 Hide the vertical scrollbar that sometimes appears in Webkit while resizing:
 ```css
