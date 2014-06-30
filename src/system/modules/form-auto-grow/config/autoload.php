@@ -11,7 +11,7 @@
  * Register the class
  */
 ClassLoader::addClasses(array(
-    'FormAutoGrow\ParseWidgetHook' => 'system/modules/form-auto-grow/ParseWidgetHook.php'
+    'FormAutoGrow\LoadFormFieldHook' => 'system/modules/form-auto-grow/LoadFormFieldHook.php'
 ));
 
 
@@ -19,5 +19,5 @@ ClassLoader::addClasses(array(
  * Register the template
  */
 TemplateLoader::addFiles(array(
-	'faq_textfield'	=> 'system/modules/form-auto-grow/templates',
+	'moo_autogrow'	=> 'system/modules/form-auto-grow/templates',
 ));
