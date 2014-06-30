@@ -57,7 +57,6 @@ class tl_form_field_fag extends Backend {
 			return;
 
 		if ($objFfm->type == 'textarea' && $objFfm->fag_enabled)
-			Message::addInfo(sprintf($GLOBALS['TL_LANG']['tl_content']['includeTemplate'], 'moo_autogrow'));
-			//Message::addInfo(sprintf($GLOBALS['TL_LANG']['tl_content']['includeTemplates'], 'moo_autogrow', 'j_autogrow'));
+			Message::addInfo(sprintf($GLOBALS['TL_LANG']['tl_content']['includeTemplates'], 'moo_autogrow', 'j_autogrow'));
 	}
 }
