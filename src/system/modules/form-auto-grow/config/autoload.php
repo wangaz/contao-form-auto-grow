@@ -19,5 +19,6 @@ ClassLoader::addClasses(array(
  * Register the template
  */
 TemplateLoader::addFiles(array(
+	'j_autogrow'	=> 'system/modules/form-auto-grow/templates',
 	'moo_autogrow'	=> 'system/modules/form-auto-grow/templates',
 ));
