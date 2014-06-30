@@ -30,6 +30,7 @@
 	"extra":{
 		"contao": {
 			"symlinks":{
+				"src/assets/jquery/autogrow":"assets/jquery/autogrow",
 				"src/assets/mootools/autogrow":"assets/mootools/autogrow",
 				"src/system/modules/form-auto-grow":"system/modules/form-auto-grow"
 			},

@@ -1,0 +1,9 @@
+
+<script src="<?php echo TL_ASSETS_URL; ?>assets/jquery/autogrow/autogrow.js"></script>
+<script>
+	(function($) {
+		$(document).ready(function() {
+			$('textarea.auto-grow').autogrow();
+		});
+	})(jquery);
+</script>
