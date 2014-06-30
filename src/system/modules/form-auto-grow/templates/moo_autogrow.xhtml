@@ -1,0 +1,15 @@
+
+<script src="<?php echo TL_ASSETS_URL; ?>assets/mootools/autogrow/autogrow.js"></script>
+<script>
+	/* <![CDATA[ */
+	(function() {
+		window.addEvent('domready', function() {
+			$$('textarea.auto-grow').each(function(el) {
+				new Form.AutoGrow(el, {
+					minHeightFactor: el.get('rows')
+				});
+			});
+		});
+	})();
+	/* ]]> */
+</script>

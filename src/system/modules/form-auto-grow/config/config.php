@@ -10,4 +10,4 @@
 /*
  * Hooks
  */
-$GLOBALS['TL_HOOKS']['parseWidget'][] = array('FormAutoGrow\ParseWidgetHook', 'parseWidget');
+$GLOBALS['TL_HOOKS']['loadFormField'][] = array('FormAutoGrow\LoadFormFieldHook', 'loadFormField');
