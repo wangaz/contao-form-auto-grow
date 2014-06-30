@@ -45,6 +45,7 @@ class tl_form_field_fag extends Backend {
 		System::loadLanguageFile('tl_content');
 	}
 	
+	
 	/**
 	 * Show a hint if a JavaScript library needs to be included in the page layout
 	 */
