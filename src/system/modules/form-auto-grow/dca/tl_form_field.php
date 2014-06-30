@@ -26,10 +26,9 @@ $GLOBALS['TL_DCA']['tl_form_field']['fields']['fag_enabled'] = array(
 	'label'         => &$GLOBALS['TL_LANG']['tl_form_field']['fag_enabled'],
 	'inputType'     => 'checkbox',
 	'exclude'       => true,
-	'eval'			=> array('submitOnChange' => true, 'tl_class' => 'm12'),
+	'eval'			=> array('tl_class' => 'm12'),
 	'sql'			=> "varchar(1) NOT NULL default ''"
 );
-
 
 /**
  * Class tl_form_field_fag
@@ -45,20 +44,19 @@ class tl_form_field_fag extends Backend {
 		System::loadLanguageFile('tl_content');
 	}
 	
-	
 	/**
 	 * Show a hint if a JavaScript library needs to be included in the page layout
 	 */
 	public function showJsLibraryHint($dc) {
-		if ($_POST || Input::get('act') != 'edit')
-			return;
+		//if ($_POST || Input::get('act') != 'edit')
+			//return;
 
 		$objFfm = FormFieldModel::findByPk($dc->id);
 
 		if ($objFfm === null)
 			return;
 
-		if ($objFfm->type == 'textarea' && $objCte->fag_enabled)
+		if ($objFfm->type == 'textarea' && $objFfm->fag_enabled)
 			Message::addInfo(sprintf($GLOBALS['TL_LANG']['tl_content']['includeTemplate'], 'moo_autogrow'));
 			//Message::addInfo(sprintf($GLOBALS['TL_LANG']['tl_content']['includeTemplates'], 'moo_autogrow', 'j_autogrow'));
 	}
