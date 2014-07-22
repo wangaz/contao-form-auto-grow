@@ -2,11 +2,11 @@
 
 Automatically resizes textareas depending on their content for [Contao CMS](https://contao.org).
 
-#License
+##License
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
-#CSS Tips
+##CSS Tips
 
 Use the following CSS-Styles to get most out of Auto Grow.
 
